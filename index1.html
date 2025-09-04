@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #E2EAFC, #D7E3FC) none;
+    }
+
+    .container {
+      width: 800px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      display: flex;
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      background: #3D348B;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .left button {
+      background: transparent;
+      border: 2px solid #fff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .left button:hover {
+      background: #fff;
+      color: #3D348B;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .input-box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .right a {
+      font-size: 12px;
+      color: #3D348B;
+      text-decoration: none;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .btn {
+      background: #3D348B;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3D348B;
+    }
+
+    .social-login {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-login p {
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .social-icons button {
+      border: 1px solid #ccc;
+      background: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .social-icons button:hover {
+      background: #f0f0f0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 90%;
+      }
+      .left, .right {
+        flex: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Hello, Welcome!</h2>
+      <p>Don’t have an account?</p>
+      <button>Register</button>
+    </div>
+    <div class="right">
+      <h2>Login</h2>
+      <div class="input-box">
+        <input type="text" placeholder="Username">
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password">
+      </div>
+      <a href="#">Forgot password?</a>
+      <button class="btn">Login</button>
+
+      <div class="social-login">
+        <p>or login with social platforms</p>
+        <div class="social-icons">
+          <button>G</button>
+          <button>F</button>
+          <button>I</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
