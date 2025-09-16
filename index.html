@@ -2,185 +2,210 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(to right, #E2EAFC, #D7E3FC) none;
-    }
-
-    .container {
-      width: 800px;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      display: flex;
-      overflow: hidden;
-    }
-
-    .left {
-      flex: 1;
-      background: #3D348B;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
-    }
-
-    .left h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .left p {
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .left button {
-      background: transparent;
-      border: 2px solid #fff;
-      padding: 10px 30px;
-      border-radius: 30px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .left button:hover {
-      background: #fff;
-      color: #3D348B;
-    }
-
-    .right {
-      flex: 1;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .right h2 {
-      margin-bottom: 20px;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .input-box {
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    .input-box input {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      outline: none;
-    }
-
-    .right a {
-      font-size: 12px;
-      color: #3D348B;
-      text-decoration: none;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-
-    .btn {
-      background: #3D348B;
-      color: #fff;
-      border: none;
-      padding: 12px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #3D348B;
-    }
-
-    .social-login {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .social-login p {
-      font-size: 12px;
-      margin-bottom: 10px;
-      color: #555;
-    }
-
-    .social-icons button {
-      border: 1px solid #ccc;
-      background: none;
-      padding: 8px 12px;
-      border-radius: 8px;
-      margin: 0 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .social-icons button:hover {
-      background: #f0f0f0;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        width: 90%;
-      }
-      .left, .right {
-        flex: none;
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="left">
-      <h2>Hello, Welcome!</h2>
-      <p>Don’t have an account?</p>
-      <button>Register</button>
+  <!-- Header -->
+  <Header>
+    <div class="main-container">
+      <div class="nav">
+        <div class="logo">
+          <svg 
+          width="24" 
+          height="24" 
+          xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13 9h9l-14 15 3-9h-9l14-15-3 9zm-8.699 5h8.086l-1.987 5.963 9.299-9.963h-8.086l1.987-5.963-9.299 9.963z"/></svg>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="services">services</a></li>
+              <li><a href="portofolios">portofolios</a></li>
+              <li><a href="contact">contact</a></li>
+              <li><a href="skils">skils</a></li></ul>
+          </nav>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+      </div>
+<!-- section 1 -->
+<section id="Hero">
+  <div class="Hero-mid">
+    <div class="pembungkus-par">
+    <h3 class="title">Hallo, </h3>
+    <div class="paragraf-1"> welcome<br>to my website</div>
     </div>
-    <div class="right">
-      <h2>Login</h2>
-      <div class="input-box">
-        <input type="text" placeholder="Username">
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Password">
-      </div>
-      <a href="#">Forgot password?</a>
-      <button class="btn">Login</button>
-
-      <div class="social-login">
-        <p>or login with social platforms</p>
-        <div class="social-icons">
-          <button>G</button>
-          <button>F</button>
-          <button>I</button>
-        </div>
-      </div>
+    <h3 class="name">My name is</h3>
+    <h1 class="name">Haryy <span id="typewriter"></span></h1>
+    <p class="deskripsi">
+      im from kulon hahaha<br>
+      no no aku lahir di Jakarta<br>
+      hobyy favorit <span class="UX">dgsain UI/UX</span>
+    </p>
+  </div>
+</section>
+    </div>
+</Header>
+<section id="services">
+  <div class="services main-container">
+    <h3 class="Pre-title">services</h3>
+    <h3 class="section-title services-title">Disain UI/UX</h3>
+    <div class="grid-3">
+      
+    <!--Services 1-->
+    <div class="service">
+    <div class="service-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24">
+      <path d="M3 16l-3-10 7.104 4 4.896-8 4.896 8 7.104-4-3 10h-18zm0 2v4h18v-4h-18z"/>
+      </svg>
+    </div>
+    <h4>UI/UX</h4>
+    <p>Fokus pada visual dan pengalaman yang intuitif.</p>
+  </div>
+     <!--Services 2-->
+    <div class="service">
+    <div class="service-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 7c2.761 0 5 2.239 5 5s-2.239 5-5 5c-2.762 0-5-2.239-5-5s2.238-5 5-5zm15-4c0-1.657-1.344-3-3-3-1.657 0-3 1.343-3 3 0 .312.061.606.148.888l-4.209 3.157c.473.471.877 1.009 1.201 1.599l4.197-3.148c.477.317 1.048.504 1.663.504 1.656 0 3-1.343 3-3zm-5.852 17.112c-.087.282-.148.576-.148.888 0 1.657 1.343 3 3 3 1.656 0 3-1.343 3-3s-1.344-3-3-3c-.615 0-1.186.187-1.662.504l-4.197-3.148c-.324.59-.729 1.128-1.201 1.599l4.208 3.157zm6.852-5.05c1.656 0 3-1.343 3-3s-1.344-3-3-3c-1.281 0-2.367.807-2.797 1.938h-6.283c.047.328.08.66.08 1s-.033.672-.08 1h6.244c.395 1.195 1.508 2.062 2.836 2.062z"/></svg>
+    </div>
+    <h4>Design</h4>
+    <p> Memiliki kreativitas tinggi dalam desain visual. </p>
+  </div>
+      <!--Services 3-->
+    <div class="service">
+    <div class="service-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.897 4.181c2.43-2.828 5.763-4.181 9.072-4.181 4.288 0 8.535 2.273 10.717 6.554-2.722.001-6.984 0-9.293 0-1.674.001-2.755-.037-3.926.579-1.376.724-2.415 2.067-2.777 3.644l-3.793-6.596zm5.11 7.819c0 2.2 1.789 3.99 3.988 3.99s3.988-1.79 3.988-3.99-1.789-3.991-3.988-3.991-3.988 1.791-3.988 3.991zm5.536 5.223c-2.238.666-4.858-.073-6.293-2.549-1.095-1.891-3.989-6.933-5.305-9.225-1.33 2.04-1.945 4.294-1.945 6.507 0 5.448 3.726 10.65 9.673 11.818l3.87-6.551zm2.158-9.214c1.864 1.734 2.271 4.542 1.007 6.719-.951 1.641-3.988 6.766-5.46 9.248 7.189.443 12.752-5.36 12.752-11.972 0-1.313-.22-2.66-.69-3.995h-7.609z"/></svg>
+    </div>
+    <h4>Web</h4>
+    <p> Frontend developer in progress, masih belajar.</p>
+  </div>
+ </div>
+</div>
+</section>
+ <!--end of service -->
+ <!-- portfolio-->
+ <section id="portofolios">
+   <div class="portofolio main-container">
+     <h3 class="Pre-title">My work</h3>
+     <h1 class="section-title">Featured portofolio</h1>
+   <div class="grid-3">
+     <!--porfolio 1-->
+     <div class="portofolio">
+       <div class="portofolio-cover">
+         <img src="meong-cover1.png" alt="gambar"></img>
+       </div>
+          
+     <div class="portofolio-info">
+     <div class="portfolio-title">
+       <h4>Portofolio website</h4>
+       <a href="/" class="portfolio-link">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 16l-3-10 7.104 4 4.896-8 4.896 8 7.104-4-3 10h-18zm0 2v4h18v-4h-18z"/></svg>
+       </a>
+     </div>
+     <div class="portfolio-tags">
+       <div>Modern frontend design</div>
+       </div>
+       <p>Website portofolio modern buat nunjukin skill, project, dan pengalaman.</p>
+     </div>
+    </div>
+    <!-- portofolio 2-->
+         <div class="portofolio">
+       <div class="portofolio-cover">
+         <img src="meong-cover2.png" alt="gambar"></img>
+       </div>
+          
+     <div class="portofolio-info">
+     <div class="portfolio-title">
+       <h4>UI Typeface Showcase</h4>
+       <a href="/" class="portfolio-link">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 16l-3-10 7.104 4 4.896-8 4.896 8 7.104-4-3 10h-18zm0 2v4h18v-4h-18z"/></svg>
+       </a>
+     </div>
+     
+     <div class="portfolio-tags">
+       <div>Responsive & interactive UI</div>
+       </div>
+       <p>Typeface di UI design. Fokus ke tipografi modern, readability, dan kombinasi warna fresh biar makin menarik.</p>
+     </div>
+    </div>
+    <!--porfolio 3-->
+         <div class="portofolio">
+       <div class="portofolio-cover">
+         <img src="meong-cover3.png" alt="gambar"></img>
+       </div>
+          
+     <div class="portofolio-info">
+     <div class="portfolio-title">
+       <h4>Creative Agency Landing</h4>
+       <a href="/" class="portfolio-link">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 16l-3-10 7.104 4 4.896-8 4.896 8 7.104-4-3 10h-18zm0 2v4h18v-4h-18z"/></svg>
+       </a>
+     </div>
+     
+     <div class="portfolio-tags">
+       <div>Creative web concept</div>
+       <div></div>
+       </div>
+        <p> Landing page agensi kreatif dengan ilustrasi interaktif, efek hover, dan layout dinamis.</p>
+     </div>
     </div>
   </div>
+</div>
+ </section>
+ <!-- end of porfolio -->
+ <!-- education and skilss -->
+ <section id="skils">
+   <div class="skils main-container">
+     <h3 class="Pre-title">Learning path</h3>
+     <h1 class="section-title">skills and education</h1>
+   </div>
+   
+   <div class="skils-grid">
+     <div class="skils-left">
+       <div class="education">
+         <div class="line">
+         <div></div>
+       </div>
+       
+       <div class="education-info">
+         <h4 class="education-title">universitas gajah mada</h4>
+         <p>master's of website. development software engineer</p>
+         <h4 class="education-yeras">2019-2023</h4>
+       </div>
+      </div>
+             <div class="education">
+         <div class="line">
+           <div></div>
+         </div>
+         
+         <div class="education-info">
+           <h4 class="education-title">universitas gajah mada</h4>
+           <p>master's of website. development software engineer</p>
+           <h4 class="education-yeras">2019-2023</h4>
+         </div>
+       </div>
+              <div class="education">
+         <div class="line">
+           <div></div>
+         </div>
+         
+         <div class="education-info">
+           <h4 class="education-title">universitas gajah mada</h4>
+           <p>master's of website. development software engineer</p>
+           <h4 class="education-yeras">2019-2023</h4>
+         </div>
+       </div>
+       <div class="skils-right">
+       </div>
+     </div>
+   </div>
+ </section>
+  <script src="main.js"></script>
 </body>
 </html>
